@@ -18,8 +18,8 @@ root.render(
         <Route path='/' element={<App />}>
           <Route path='contact' element={<Contact/>}/>
           <Route path='products' element={<Products/>}>
-            <Route path=':productsId' element={<IndividualProduct/>}/>
           </Route>
+          <Route path='/products/:productsId' element={<IndividualProduct/>}/>
           <Route path='*' element={<Wild />}/>
         </Route>
       </Routes>
